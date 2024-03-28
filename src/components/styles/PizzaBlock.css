@@ -1,0 +1,40 @@
+.pizza-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.pizza {
+    width: 260px;
+    height: 260px;
+}
+
+.price-block {
+    display: flex;
+    align-items: center;
+}
+
+.pizza-btn {
+    width: 155px;
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid #EB5A1E;
+    color: #EB5A1E;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.pizza-btn:hover {
+    cursor: pointer;
+    background-color: #FE5F1E;
+    color: #ffff;
+    transition: 0.2s;
+}
+
+.pizza-price {
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 20px;
+}

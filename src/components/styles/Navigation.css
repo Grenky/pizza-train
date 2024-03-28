@@ -1,0 +1,23 @@
+.nav-wrapper {
+    width: 100%;
+    height: 46px;
+    margin-bottom: 50px;
+}
+
+.nav-btn {
+    background-color: #efe6e6;
+    height: 50px;
+    border: none;
+    border-radius: 20%;
+    font-size: 21px;
+    margin-left: 15px;
+}
+
+.nav-btn:hover {
+    cursor: pointer;
+    background-color: #282828;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-btn-wrapper {}
