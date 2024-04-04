@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles/Navigation.css';
 
 export default function Navigation() {
+
+    const [activeIndex, setActiceIndex] = useState(0);
+
+    const category = ['Все', 'Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
+
+
+    const onClickCategory = (index) => {
+        setActiceIndex(index)
+    }
+
     return (
         <div className="nav-wrapper">
             <div className="nav-btn-wrapper">
-                <button className="nav-btn">Все</button>
-                <button className="nav-btn">Мясные</button>
-                <button className="nav-btn">Вегетарианская</button>
-                <button className="nav-btn">Гриль</button>
-                <button className="nav-btn">Острые</button>
-                <button className="nav-btn">Закрытые</button>
+
+                {category.map((value, index) => (
+                    <button onClick={() => onClickCategory(index)} className={activeIndex === index ? 'active' : 'nav-btn'}>{value}</button>
+                ))}
+
             </div>
             <div className="nav-drop-wrapper">
                 <div>

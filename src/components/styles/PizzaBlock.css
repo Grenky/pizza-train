@@ -38,3 +38,35 @@
     font-weight: 700;
     margin-right: 20px;
 }
+
+.pizza-block-selector {
+    width: 100%;
+    padding-left: 0px;
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.first-selector {
+    cursor: pointer;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.size-selector {
+    cursor: pointer;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.new-active {
+    background-color: #FFFFFF;
+}
+
+li {
+    padding: 5px;
+    border-radius: 5px;
+}

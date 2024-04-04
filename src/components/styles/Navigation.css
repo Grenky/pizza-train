@@ -15,9 +15,20 @@
 
 .nav-btn:hover {
     cursor: pointer;
+}
+
+
+.nav-btn-wrapper {}
+
+.active {
+    cursor: pointer;
     background-color: #282828;
     color: white;
     transition: 0.3s;
-}
 
-.nav-btn-wrapper {}
+    height: 50px;
+    border: none;
+    border-radius: 20%;
+    font-size: 21px;
+    margin-left: 15px;
+}
