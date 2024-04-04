@@ -1,0 +1,15 @@
+.sort__popup_content {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    background-color: #F3F3F3;
+}
+
+.test {
+    border-bottom: dashed #FE5F1E;
+    cursor: pointer;
+}
+
+.sort-active {
+    background-color: #FE5F1E;
+}

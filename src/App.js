@@ -17,11 +17,12 @@ function App() {
           <Header />
           <Navigation />
           <div className='content-wrapper'>
+
             {
-              pizzas.map(obj => <PizzaBlock{...obj} />)
+              pizzas.map(obj => <PizzaBlock{...obj} key={obj.key} />)
             }
             {
-              pizzas.map(obj => <PizzaBlock{...obj} />)
+              pizzas.map(obj => <PizzaBlock{...obj} key={obj.key} />)
             }
 
             {/* <PizzaBlock title="Чизбургер-пицца" price="от 395 ₴" src="./images/image2.png" />

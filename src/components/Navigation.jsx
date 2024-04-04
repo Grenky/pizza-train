@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './styles/Navigation.css';
+import Sort from "./Sort";
 
 export default function Navigation() {
 
@@ -17,16 +18,12 @@ export default function Navigation() {
             <div className="nav-btn-wrapper">
 
                 {category.map((value, index) => (
-                    <button onClick={() => onClickCategory(index)} className={activeIndex === index ? 'active' : 'nav-btn'}>{value}</button>
+                    <button key={value} onClick={() => onClickCategory(index)} className={activeIndex === index ? 'active' : 'nav-btn'}>{value}</button>
                 ))}
 
             </div>
             <div className="nav-drop-wrapper">
-                <div>
-                    <a></a>
-                    <a></a>
-                    <a></a>
-                </div>
+                <Sort />
             </div>
         </div>
     )

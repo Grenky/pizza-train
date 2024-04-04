@@ -22,13 +22,13 @@ export default function PizzaBlock({ title, price, src, sizes, types }) {
                 <ul className='first-selector'>
                     {
                         types.map(types => (
-                            <li onClick={() => setActiveType(types)} className={activeType === types ? 'new-active' : ''}>{typesName[types]}</li>))
+                            <li key={types} onClick={() => setActiveType(types)} className={activeType === types ? 'new-active' : ''}>{typesName[types]}</li>))
                     }
                 </ul>
                 <ul className='size-selector'>
                     {
                         sizes.map((size, i) => (
-                            <li onClick={() => setActiveSize(i)} className={activeSize === i ? 'new-active' : ''}>{size} см.</li>))
+                            <li key={size} onClick={() => setActiveSize(i)} className={activeSize === i ? 'new-active' : ''}>{size} см.</li>))
                     }
                 </ul>
             </div>

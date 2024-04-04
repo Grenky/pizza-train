@@ -14,7 +14,8 @@
         ],
         "price": 395,
         "category": 0,
-        "rating": 4
+        "rating": 4,
+        "key": 2
     },
     {
         "id": 1,
@@ -29,7 +30,8 @@
         ],
         "price": 450,
         "category": 1,
-        "rating": 6
+        "rating": 6,
+        "key": 3
     },
     {
         "id": 2,
@@ -45,7 +47,8 @@
         ],
         "price": 290,
         "category": 0,
-        "rating": 6
+        "rating": 6,
+        "key": 4
     },
     {
         "id": 3,
@@ -60,6 +63,7 @@
         ],
         "price": 385,
         "category": 0,
-        "rating": 4
+        "rating": 4,
+        "key": 5
     }
 ]
