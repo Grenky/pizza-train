@@ -1,13 +1,26 @@
+import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
 import PizzaBlock from './components/PizzaBlock';
 
-import pizzas from './components/assets/pizzas.json';
+import PizzaList from './components/assets/pizzas.json';
 
 
 
 function App() {
+
+
+
+
+  // useEffect(() => {
+  //   fetch('https://661e4fe198427bbbef0428a2.mockapi.io/items')
+  //     .then((res) => res.json())
+  //     .then((arr) => {
+  //       setItems(arr);
+  //     });
+  // }, []);
+
 
 
   return (
@@ -19,10 +32,11 @@ function App() {
           <div className='content-wrapper'>
 
             {
-              pizzas.map(obj => <PizzaBlock{...obj} key={obj.key} />)
+              PizzaList.map(obj => <PizzaBlock{...obj} key={obj.id} />)
             }
+
             {
-              pizzas.map(obj => <PizzaBlock{...obj} key={obj.key} />)
+              PizzaList.map(obj => <PizzaBlock{...obj} key={obj.id} />)
             }
 
             {/* <PizzaBlock title="Чизбургер-пицца" price="от 395 ₴" src="./images/image2.png" />

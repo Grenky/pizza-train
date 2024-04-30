@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './styles/PizzaBlock.css';
 
 
-export default function PizzaBlock({ title, price, src, sizes, types }) {
+export default function PizzaBlock({ name, src, sizes, types, price }) {
     const typesName = ['тонкое', 'традиционное']
 
     const [pizzaCount, setPizzaCount] = useState(0);
@@ -14,21 +14,27 @@ export default function PizzaBlock({ title, price, src, sizes, types }) {
         setPizzaCount(pizzaCount + 1);
     }
 
+
     return (
         <div className="pizza-wrapper">
-            <img className='pizza' src={src} alt={title}></img>
-            <p className='pizza-title'>{title}</p>
+            <img className='pizza' src={src} alt={name}></img>
+            <p className='pizza-title'>{name}</p>
             <div className='pizza-block-selector'>
                 <ul className='first-selector'>
                     {
-                        types.map(types => (
-                            <li key={types} onClick={() => setActiveType(types)} className={activeType === types ? 'new-active' : ''}>{typesName[types]}</li>))
+                        types.map((typeId) => (
+                            <li
+                                key={typeId}
+                                onClick={() => setActiveType(typeId)}
+                                className={activeType === typeId ? 'new-active' : ''}>
+                                {typesName[typeId]}
+                            </li>))
                     }
                 </ul>
                 <ul className='size-selector'>
                     {
                         sizes.map((size, i) => (
-                            <li key={size} onClick={() => setActiveSize(i)} className={activeSize === i ? 'new-active' : ''}>{size} см.</li>))
+                            <li key={i} onClick={() => setActiveSize(i)} className={activeSize === i ? 'new-active' : ''}>{size} см.</li>))
                     }
                 </ul>
             </div>
