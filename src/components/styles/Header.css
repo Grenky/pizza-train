@@ -12,11 +12,15 @@
 .logo-wrapper {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo {
     width: 38px;
     height: 38px;
+}
+.logo-title {
+    color: black;
 }
 
 .logo-title,

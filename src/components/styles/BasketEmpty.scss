@@ -1,0 +1,28 @@
+.baskempty-wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+        div {
+            color: #777777;
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+        img {
+            width: 300px;
+            height: 251px;
+            margin-bottom: 100px;
+        }
+        button {
+            width: 210px;
+            height: 46px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            font-weight: 700; 
+            margin-bottom: 100px;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+}

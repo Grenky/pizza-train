@@ -1,4 +1,6 @@
-.App {}
+.App {
+  height: 100vh;
+}
 
 .App-wrapper {
   background-color: #FFDF8C;
@@ -13,14 +15,15 @@
 }
 
 .content-wrapper {
-  width: 76%;
-  height: 1000px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  padding-bottom: 30px;
+
+
+}
+.content-block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 11px;
+  grid-row-gap: 20px;
 }
 
 li {
